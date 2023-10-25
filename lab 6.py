@@ -37,8 +37,8 @@ def encode(code):  ## Darvan Cherichel
     
     return pass_encoded
 
-            
-def decode(password):
+
+def decode(password):   # Chasden Johns
     total = ''
     for item in str(password):
         if int(item) > 2:
@@ -66,18 +66,18 @@ def main():
         
         menu_opt = int(input("Please enter an Option: "))
         
-        if menu_opt== 1:
-            og_pass= (input("Please enter your password to encode: "))
+        if menu_opt == 1:
+            og_pass = (input("Please enter your password to encode: "))
             print("Your password has been encoded and stored!")
-        
-        elif menu_opt==2:
+
+        elif menu_opt == 2:
             encoded_pass=encode(og_pass)
-            print(f"The encoded password is {encoded_pass}, and the original password is {og_pass}.")
+            print(f"The encoded password is {encoded_pass}, and the original password is {decode(encoded_pass)}.")
             
             
            
         
-        elif menu_opt==3:
+        elif menu_opt == 3:
             break
             
         
