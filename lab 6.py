@@ -38,13 +38,19 @@ def encode(code):  ## Darvan Cherichel
     return pass_encoded
 
             
-        
-        
+def decode(password):
+    total = ''
+    for item in str(password):
+        if int(item) > 2:
+            total += (str(int(item) - 3))
+        if item == '0':
+            total += '7'
+        elif item == '1':
+            total += '8'
+        elif item == '2':
+            total += '9'
+    return total
 
-
-
-    
-    
 
 
 def main():
