@@ -1,6 +1,6 @@
-def encode(code):
+def encode(code):  ## Darvan Cherichel
     
-    pass_encoded=""
+    pass_encoded="" 
     
     for digit in code:
         
@@ -41,44 +41,7 @@ def encode(code):
         
         
 
-def decode(code):
-    pass_decode=""
-    
-    for digit in code:
-        
-        if digit == "1":
-            pass_decode+="8"
-        
-        elif digit =="2":
-            pass_decode="9"
-        
-        elif digit=="3":
-            pass_decode+="0"
-            
-        elif digit=="4":
-            pass_decode+="1"
-            
-        elif digit=="5":
-            pass_decode+="2"
-        
-        elif digit=="6":
-            pass_decode+="3"
-        
-        elif digit=="7":
-            pass_decode+="4"
 
-        
-        elif digit=="8":
-            pass_decode+="5"
-        
-        elif digit=="9":
-            pass_decode+="6"
-        
-        elif digit=="0":
-            pass_decode+="7"
-        
-    return pass_decode
-    
 
     
     
